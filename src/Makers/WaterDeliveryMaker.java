@@ -5,6 +5,7 @@ import Products.WaterDelivery;
 public class WaterDeliveryMaker implements TransportMaker{
     @Override
     public Transport createTransport() {
-        return new WaterDelivery();
+        String deliveryType = "по реке";
+        return new WaterDelivery(deliveryType);
     }
 }

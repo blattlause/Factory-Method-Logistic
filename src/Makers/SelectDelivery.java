@@ -1,9 +1,7 @@
 package Makers;
 
-import Products.Transport;
-
 public class SelectDelivery {
-    public Transport selectTransport(String destination) {
+    public TransportMaker selectTransport(String destination) {
         TransportMaker maker = null;
         switch (destination) {
             case "Россия":
@@ -21,6 +19,6 @@ public class SelectDelivery {
             default:
                 break;
         }
-        return maker.createTransport();
+        return maker;
     }
 }
